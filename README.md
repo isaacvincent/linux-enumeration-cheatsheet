@@ -143,6 +143,218 @@ Displays current environment variables.
 
 ---
 
+# 🖥️ Linux Enumeration
+
+Enumeration is the most important phase of a penetration test. Before attempting exploitation or privilege escalation, gather as much information about the target system as possible.
+
+---
+
+# 📍 System Information
+
+## Kernel Version
+
+```bash
+uname -a
+```
+
+Displays kernel version, architecture, hostname, and build information.
+
+---
+
+## Operating System
+
+```bash
+cat /etc/os-release
+```
+
+Shows Linux distribution information.
+
+Alternative:
+
+```bash
+cat /etc/issue
+```
+
+---
+
+## Hostname
+
+```bash
+hostname
+```
+
+Displays the machine hostname.
+
+---
+
+## Current User
+
+```bash
+whoami
+```
+
+Displays the current logged-in user.
+
+---
+
+## User ID
+
+```bash
+id
+```
+
+Shows:
+
+- UID
+- GID
+- Groups
+
+Example:
+
+```bash
+uid=1000(karen) gid=1000(karen) groups=1000(karen),27(sudo)
+```
+
+If the user belongs to the **sudo** group, privilege escalation may be possible.
+
+---
+
+## Logged In Users
+
+```bash
+who
+```
+
+Displays currently logged-in users.
+
+---
+
+## Last Login
+
+```bash
+last
+```
+
+Shows login history.
+
+---
+
+# 💾 Hardware Information
+
+## CPU
+
+```bash
+lscpu
+```
+
+Displays CPU architecture and details.
+
+---
+
+## Memory
+
+```bash
+free -h
+```
+
+Shows RAM usage.
+
+---
+
+## Disk Usage
+
+```bash
+df -h
+```
+
+Shows mounted disks and available storage.
+
+---
+
+## Mounted Drives
+
+```bash
+mount
+```
+
+Lists mounted file systems.
+
+---
+
+# 🌐 Network Enumeration
+
+## Interfaces
+
+```bash
+ip a
+```
+
+or
+
+```bash
+ifconfig
+```
+
+Displays network interfaces.
+
+---
+
+## Routing Table
+
+```bash
+ip route
+```
+
+Shows routing information.
+
+---
+
+## ARP Table
+
+```bash
+arp -a
+```
+
+Displays neighboring devices.
+
+---
+
+## Listening Ports
+
+```bash
+ss -tuln
+```
+
+or
+
+```bash
+netstat -tuln
+```
+
+Lists listening services.
+
+---
+
+## DNS Configuration
+
+```bash
+cat /etc/resolv.conf
+```
+
+Displays configured DNS servers.
+
+---
+
+## Hosts File
+
+```bash
+cat /etc/hosts
+```
+
+Shows local hostname mappings.
+
+---
+
 ## 📌 Status
 
 🚧 Currently being updated as I progress through TryHackMe and home lab exercises.
