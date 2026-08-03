@@ -60,6 +60,78 @@ linux-enumeration-cheatsheet/
 
 ---
 
+# 🖥 System Enumeration
+
+## Kernel Version
+
+```bash
+uname -a
+```
+
+Displays the Linux kernel version and system architecture.
+
+---
+
+## Hostname
+
+```bash
+hostname
+```
+
+Displays the hostname of the target machine.
+
+---
+
+## Distribution Information
+
+```bash
+cat /etc/os-release
+```
+
+Displays operating system information.
+
+---
+
+## CPU Information
+
+```bash
+lscpu
+```
+
+Displays CPU details.
+
+---
+
+## Mounted Drives
+
+```bash
+mount
+```
+
+Displays mounted file systems.
+
+---
+
+## Disk Usage
+
+```bash
+df -h
+```
+
+Displays available disk space.
+
+---
+
+## Environment Variables
+
+```bash
+env
+```
+
+Displays current environment variables.
+
+---
+
 ## 🛠 Tools
 
 - linPEAS
